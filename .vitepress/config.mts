@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "HuanXiong",
-  description: "note and blog",
+  title: "Twinkling",
+  description: "Note and Blog",
   head: [
     [
       'script',
@@ -22,7 +22,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Examples', link: '/markdown-examples' },
+      { text: 'About', link: '/about' },
     ],
 
     sidebar: [
@@ -34,6 +35,20 @@ export default defineConfig({
         ]
       }
     ],
+    // 版权需要自己处理，不重要
+    // footer: {
+    //   message: 'footer',
+    //   copyright: 'ccc',
+    // },
+    // 底部上下文章，不重要
+    // docFooter: {
+    //   prev: 'Prev',
+    //   next: 'Next'
+    // },
+    // 更新时间，不重要
+    // lastUpdated: {
+    //   text: '更新于'
+    // },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
