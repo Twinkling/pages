@@ -21,20 +21,35 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
+      { text: '主页', link: '/' },
+      { text: '学习', link: '/learning/' },
+      { text: '书籍', link: '/books/' },
       { text: 'Examples', link: '/markdown-examples' },
       { text: 'About', link: '/about' },
     ],
 
-    sidebar: [
-      {
+    sidebar: {
+      "/books": [{
+        text: '书山有路勤为径',
+        items: [
+          { text: 'Markdown Examples', link: '/books/' },
+        ]
+      }],
+      "/learning": [{
+        text: '学海无涯苦作舟',
+        items: [
+          { text: 'Markdown Examples', link: '/learning/' },
+          // { text: 'Runtime API Examples', link: '/api-examples' }
+        ]
+      }],
+      "/": [{
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
-      }
-    ],
+      }],
+  },
     // 版权需要自己处理，不重要
     // footer: {
     //   message: 'footer',
