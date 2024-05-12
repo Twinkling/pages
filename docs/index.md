@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Twinkling"
-  text: "note and blog"
-  tagline: My great project tagline
+  name: "Hu XiaoTian's Blog"
+  text: "记录日常开发过程，以及技术学习的探索过程"
+  # tagline: My great project tagline
   actions:
     - theme: brand
       text: Markdown Examples
